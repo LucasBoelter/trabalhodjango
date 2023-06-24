@@ -1,0 +1,99 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        {% include 'uber/parciais/head_principais.html' %}
+    </head>
+    
+    <body>
+    
+        <div class="estrutura">
+            
+            {% include 'uber/parciais/navegacao.html' %}
+            
+            <!-- Conteúdo Principal -->
+            <main class="content">
+                
+                <!-- Ínicio -->
+                <div class="bem_vindo">
+                    <div>
+                        <div>
+                            <h2>Serviços</h2>
+                            <p>Conheço abaixo os tipos de serviços que a Uber oferece para seus usuários!</p>
+                        </div>
+                        {% include 'uber/parciais/botoes_painel.html' %}
+                    
+                </div>
+                <!-- Fim Ínicio -->
+                
+                <!-- Categorias -->
+                <div class="servicos_categorias bg_cinza">
+                    <div class="mesclar">
+                        <h3>Categorias</h3>
+                        <p>Um uber para cada necessidade, descubra qual o tipo de Uber que melhor se encaixa a suas necessidades e ao seu bolso.</p>
+                    </div>
+    
+                    <div class="mesclar">
+                        <h4>Uber X</h4>
+                        <h5>Ideal para sua locomoção cotidiana</h5>
+                    </div>
+                    <img src="{% static 'uber/img/uber_x_cartao.png' %}" alt="Categorias">
+                    <div class="uber_x">
+                        <p>A principal e mais usada opção da Uber, o UberX oferece viagens com preços acessíveis em carros compactos de quatro portas e ar-condicionado. Presente em todas as cidades brasileiras onde a Uber opera, é o tipo de veículo ideal para você que precisa se deslocar pela cidade durante os compromissos do dia a dia com rapidez e praticidade.</p>
+                    </div>
+                    
+                    <div class="mesclar">
+                        <h4>Uber Black</h4>
+                        <h5>Viagens exclusivas em veículos de alto nível</h5>
+                    </div>
+                    <img src="{% static 'uber/img/uber_black_cartao.png' %}" alt="Uber Eats">
+                    <div class="uber_black">
+                        <p>Primeira a ser criada entre as categorias da Uber, o Uber Black possui carros tipo sedan, tais como Toyota Corolla, Ford Fusion, Volkswagen Jetta e outros. Todos os veículos desta categoria possuem bancos de couro, oferecendo um conforto maior para você que busca uma viagem exclusiva para uma reunião de negócios, um compromisso importante ou um jantar especial. Todos os carros utilizados no Uber Black são da cor preta, e a opção está atualmente disponível em seis cidades brasileiras: Curitiba, São Paulo, Rio de Janeiro, Belo Horizonte, Brasília e Porto Alegre.</p>
+                    </div>
+                    
+                    <div class="mesclar">
+                        <h4>Uber Comfort</h4>
+                        <h5>Melhores carros e experiência premium</h5>
+                    </div>
+                    <img src="{% static 'uber/img/uber_comfort_cartao.jpg' %}">
+                    <div class="uber_comfort">
+                        <p>Desenvolvido para possibilitar uma experiência ainda mais confortável para os usuários, o Uber Comfort conecta você com  motoristas com veículos selecionados, bem avaliados e a possibilidade de seleção de preferências de conversa e temperatura antes do início da viagem.</p>
+                    </div>
+                    
+                    <div class="mesclar">
+                        <h4>Uber Juntos</h4>
+                        <h5>Compartilhando viagens e economizando</h5>
+                    </div>
+                    <img src="{% static 'uber/img/uber_juntos_cartao.jpg' %}">
+                    <div class="uber_juntos">
+                        <p>Criado como uma alternativa para unir usuários que estejam viajando para uma direção similar, o Uber Juntos (antigo Uber Pool) está atualmente disponível em somente algumas cidades no Brasil. Com ele, você pode ter um custo de viagem mais acessível e ajudar a contribuir com o trânsito e com o meio ambiente, ajudando a diminuir o número de veículos nas ruas. Inovação entre as categorias da Uber, o Uber Juntos é indicado para você que está viajando sozinho ou com no máximo mais uma pessoa, conectando você a outros usuários da plataforma, a um excelente custo-benefício para todos.</p>
+                    </div>
+                    
+                    <div class="mesclar">
+                        <h4>Uber Bag</h4>
+                        <h5>Mais espaço para suas malas ou pertences</h5>
+                    </div>
+                    <img src="{% static 'uber/img/uber_bag_cartao.png' %}">
+                    <div class="uber_bag">
+                        <p>Se você está indo ou voltando de uma longa viagem com algumas malas a mais, ou se precisa de mais espaço no porta malas, o Uber BAG é a modalidade que você procura. Os veículos desta categoria possuem porta-malas maior, podendo transportar suas bagagens com tranquilidade até seu destino final. A categoria Uber Bag está disponível apenas nas cidades de São Paulo e Brasília.</p>
+                    </div>
+                </div>
+                <!-- Fim Categorias -->
+                
+                <!-- Serviços -->
+                <div class="servicos servicos_inferior">
+
+                    {% include 'uber/parciais/servicos_uber_eats.html' %}
+
+                    {% include 'uber/parciais/servicos_mobile.html' %}
+                </div>
+                <!-- Fim Serviços -->
+                
+            </main>
+            <!-- Fim Conteúdo Principal -->
+            
+            {% include 'uber/parciais/rodape.html' %}
+        </div>
+    
+    </body>
+</html>

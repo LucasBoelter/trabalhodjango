@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        {% include 'uber/parciais/head_principais.html' %}
+    </head>
+    
+    <body>
+    
+        <div class="estrutura">
+            
+            {% include 'uber/parciais/navegacao.html' %}
+            
+            <!-- Conteúdo Principal -->
+            <main class="content">
+                
+                <!-- Ínicio -->
+                <div class="bem_vindo">
+                    <div>
+                        <div>
+                            <h2>Serviços</h2>
+                            <p>Conheço abaixo os tipos de serviços que a Uber oferece para seus usuários!</p>
+                        </div>
+                        {% include 'uber/parciais/botoes_painel.html' %}
+                    
+                </div>
+                <!-- Fim Ínicio -->
+                
+                <!-- Inicio Mobile -->
+                <div class="servicos_categorias categorias_mobile bg_azul">
+                    <div class="mesclar">
+                        <h3>Mobile</h3>
+                        <p>Baixe agora o nosso aplicativo em seu smartphone Android ou IOs, é rápido e fácil.</p>
+                    </div>
+                    
+                    <ul>
+                        <li><a class="botao_uber" href="https://play.google.com/store/apps/details?id=com.ubercab&uclick_id=1e3e3bed-1d47-4c1d-a82f-41a149feb678">Google Play: Uber <i class="fas fa-download"></i></a></li>
+                        <li><a class="botao_uber_eats" href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=pt_BR">Google Play: Uber <span>Eats</span> <i class="fas fa-download"></i></a></li>
+                        <li><a class="botao_uber_99" href="https://play.google.com/store/apps/details?id=com.taxis99&hl=pt_BR">Google Play: 99 <i class="fas fa-download"></i></a></li>
+                    </ul>
+                    
+                    <ul>
+                        <li><a class="botao_uber" href="https://apps.apple.com/br/app/uber/id368677368">App Store: Uber <i class="fas fa-download"></i></a></li>
+                        <li><a class="botao_uber_eats" href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277">App Store: Uber <span>Eats</span> <i class="fas fa-download"></i></a></li>
+                        <li><a class="botao_uber_99" href="https://apps.apple.com/br/app/99-carro-particular-e-t%C3%A1xi/id553663691">App Store: 99 <i class="fas fa-download"></i></a></li>
+                    </ul>
+                </div>
+                <!-- Fim Mobile -->
+                
+                <!-- Serviços -->
+                <div class="servicos servicos_inferior">
+
+                    {% include 'uber/parciais/servicos_categorias.html' %}
+
+                    {% include 'uber/parciais/servicos_uber_eats.html' %}
+                </div>
+                <!-- Fim Serviços -->
+                
+            </main>
+            <!-- Fim Conteúdo Principal -->
+            
+            {% include 'uber/parciais/rodape.html' %}
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,101 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        {% include 'uber/parciais/head_principais.html' %}
+    </head>
+    
+    <body>
+    
+        <div class="estrutura">
+            
+            {% include 'uber/parciais/navegacao.html' %}
+            
+            <!-- Conteúdo Principal -->
+            <main class="content sobre">
+                
+                <!-- Ínicio -->
+                <div class="bem_vindo">
+                    <div>
+                        <div>
+                            <h2>Sobre nós</h2>
+                            <p>Conheça um pouco sobre nossa empresa, como funciona o aplicativo da Uber e nossas parcerias mais importantes!</p>
+                        </div>
+                        {% include 'uber/parciais/botoes_painel.html' %}
+                    
+                </div>
+                <!-- Fim Ínicio -->
+                
+                <!-- Conheça-nos -->
+                <div class="conheca_nos">
+                    <div class="mesclar">
+                        <h3>Escritório da Uber</h3>
+                        <p>Abaixo você pode encontrar o endereço para um dos escritórias da Uber em São Paulo, Guarulhos</p>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.833964332097!2d-46.54530428554566!3d-23.46645286397817!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94cef56e53edff21%3A0xa97c7233dd47e9b4!2sUber%20Guarulhos%20-%20S%C3%A3o%20Paulo!5e0!3m2!1spt-BR!2sbr!4v1601304595759!5m2!1spt-BR!2sbr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0" class="mesclar"></iframe>
+                </div>
+                <!-- Fim Conheça-nos-->
+                
+                <!-- Como funciona -->
+                <div class="como_funciona bg_azul">
+                    <div>
+                        <h3>Conheça-nos</h3>
+                        <p>Uber Technologies Inc. é uma empresa multinacional americana, prestadora de serviços eletrônicos na área do transporte privado urbano, através de um aplicativo que permite a busca por motoristas baseada em sua localização, oferecendo um serviço semelhante ao tradicional táxi.</p>
+                    </div>
+                    <div>
+                        <h3>Como funciona</h3>
+                        <p>Para utilizar o nosso aplicativo, basta fazer o download do mesmo pela loja de aplicativos do seu Smartphone, ou através da nossa página de downloads pelo botão abaixo.</p>
+                        <a href="{% url 'uber:mobile' %}">Downloads<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Fim Como Funciona -->
+                
+                <!-- Segurança -->
+                <div class="conheca_nos">
+                    <div class="mesclar">
+                        <h3>Segurança</h3>
+                        <p>Neste vídeo preparado pela equipe oficial da Uber, é falado um pouco sobre os novos meios de segurança adotados pela empresa durante o perídodo da Pandemia do COVID-19</p>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/4GAgwcFE98I?start=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="mesclar"></iframe>
+                </div>
+                <!-- Fim Segurança -->
+                
+                <!-- Inicio Parcerias -->
+                <div class="parcerias bg_verde">
+                    <div class="mesclar">
+                        <h3>Parcerias</h3>
+                        <p>Conheça os principais parceiros da Uber e seus benefícios mais importantes</p>
+                    </div>
+                    <img src="{% static 'uber/img/logo_localiza.png' %}" alt="Localiza">
+                    <div>
+                        <h4>Localiza</h4>
+                        <p>Localiza Rent a Car, um dos braços da Localiza (que é também composta pela Localiza Seminovos e Localiza Gestão de Frotas), é uma rede brasileira de lojas especializadas em aluguel de automóveis, atuante nas principais cidades e aeroportos do Brasil e também em diversos países da América Latina, como Argentina, Paraguai, Colômbia, Equador e Chile. A sede da empresa fica na cidade de Belo Horizonte no estado de Minas Gerais no Brasil.</p>
+                        <a href="https://www.localizahertz.com/brasil/pt-br">Visite o site<i class="fas fa-angle-right"></i></a>
+                    </div>
+                    <img src="{% static 'uber/img/logo_movida.jpg' %}" alt="Movida">
+                    <div>
+                        <h4>Movida</h4>
+                        <p> A Movida tem a solução certa para a mobilidade da sua empresa. Mais agilidade em seus processos, economia e ainda gestão e controle nas suas locações. Entenda os benefícios e diferenciais: Portal corporativo, Relatórios gerenciais, Faturamento centralizado, Soluções sob medida: aluguel de carro mensal e eventual, Locação eventual com km livre e diárias 27 horas, Frota de carros mais nova do mercado e presente em todo território nacional, Proteção do carro e de terceiros, Assistência 24h, Documentação e Manutenção Preventiva inclusas, Lojas próprias, Executivo comercial dedicado, Serviços de Mobilidade, como aluguel de bike elétrica.</p>
+                        <a href="https://www.movida.com.br/">Visite o site<i class="fas fa-angle-right"></i></a>
+                    </div>
+                    <img src="{% static 'uber/img/logo_vai_car.png' %}" alt="Vai Car">
+                    <div>
+                        <h4>Vai.car</h4>
+                        <p> Receba seu novo carro na porta da sua casa.
+                        Sem contratos longos: Financiamento é coisa do passado. Tenha um carro pagando por mês, sem fidelidade.
+                        Sem taxas surpresas: Já foi surpreendido por taxas inesperadas? Na VAI você paga o que você vê. Sem surpresas desagradáveis.
+                        Sem burocracia ou papelada: Experimente a verdadeira liberdade digital e gerencie tudo no nosso aplicativo.
+                        Sem consulta ao SPC/Serasa: Consulta de crédito é para quem vive na era dos dinossauros. Na VAI, consulta ao SPC/Serasa não tem lugar. </p>
+                        <a href="https://vai.car/">Visite o site<i class="fas fa-angle-right"></i></a>
+                    </div>
+                </div>
+                <!-- Fim Parcerias -->
+                
+            </main>
+            <!-- Fim Conteúdo Principal -->
+            
+            {% include 'uber/parciais/rodape.html' %}
+        </div>
+    
+    </body>
+</html>

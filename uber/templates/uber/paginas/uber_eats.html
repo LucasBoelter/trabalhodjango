@@ -1,0 +1,108 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        {% include 'uber/parciais/head_principais.html' %}
+    </head>
+    
+    <body>
+        <div class="estrutura">
+            
+            {% include 'uber/parciais/navegacao.html' %}
+            
+            <!-- Conteúdo Principal -->
+            <main class="content">
+                
+                <!-- Ínicio -->
+                <div class="bem_vindo">
+                    <div>
+                        <div>
+                            <h2>Serviços</h2>
+                            <p>Conheço abaixo os tipos de serviços que a Uber oferece para seus usuários!</p>
+                        </div>
+                        {% include 'uber/parciais/botoes_painel.html' %}
+                    
+                </div>
+                <!-- Fim Ínicio -->
+                
+                <!-- Inicio Uber Eats -->
+                <div class="servicos_categorias categorias_uber_eats bg_verde">
+                    <div class="mesclar">
+                        <h3>Uber <span>Eats</span></h3>
+                        <p>Utilizando o Uber Eats, com apenas um toque, receba em sua casa seu pedido de seu restaurante favorito.</p>
+                    </div>
+    
+                    <div class="mesclar">
+                        <h4>Delivery</h4>
+                        <h5>Seu prato favorito com entrega da Uber</h5>
+                    </div>
+                    <img src="{% static 'uber/img/uber_eats_entregador.jpg' %}" alt="Entregador Uber Eats">
+                    <div class="uber_x">
+                        <p>O Uber Eats é o serviço de entrega de comidas da Uber, com atividade em 13 países e mais de 50 cidades. O app grátis está disponível para celulares Android e iPhone (iOS) e oferece cupons de desconto, suporte a diversos restaurantes e opções de cancelamento do pedido com reembolso. Além disso, ele experimenta o uso de drones nas entregas, com possibilidade chegada no Brasil em cinco anos. O serviço chegou ao Brasil em dezembro de 2016 com a promessa de rivalizar com os concorrentes iFood e SpoonRocket.</p>
+                    </div>
+                    
+                    <div>
+                        <h4>Como funciona?</h4>
+                        <p>O usuário precisa baixar o aplicativo no smartphone, aguardar que ele encontre a localização ou acessar o site do Uber Eats (eats.uber.com) e inserir o endereço manualmente. Então, basta selecionar um dos restaurantes e lanchonetes disponíveis para a entrega, escolher o item desejado no cardápio e confirmar o pagamento. Caso prefira receber o pedido mais tarde, também é possível agendar um horário. Desse modo, é necessário esperar a chegada do entregador ao local dentro do período de tempo estimado.</p>
+                    </div>
+                    
+                    <div>
+                        <h4>Preços</h4>
+                        <p>Diferente do concorrente iFood, que adiciona um percentual sobre o valor total para cobrar a entrega, o Uber Eats mantém uma taxa fixa de R$ 7,90 em cidades como São Paulo e Rio de Janeiro. No entanto, conforme o horário e a região onde a solicitação foi feita, o serviço pode cobrar um valor extra, informado no momento da conclusão do pedido. A medida garante confiabilidade à transparência do sistema.</p><br>
+                        <p>A taxa garante que você possa pedir a comida que quiser, quando quiser, mesmo que o Uber Eats esteja com alta demanda em determinadas área. O preço dinâmico é calculado ao levar em conta o número de pedidos feitos no momento em determinada região e a quantidade de entregadores disponíveis. O solicitante pagará o valor do pedido, o custo fixo (e a taxa extra, quando houver) e os impostos aplicáveis em cartão de crédito ou dinheiro.</p>
+                    </div>
+                    
+                    <div class="mesclar">
+                        <h4>Restaurantes</h4>
+                        <h5>Seus restaurantes favoritos com descontos promocionais</h5>
+                    </div>
+                    <img src="{% static 'uber/img/mc_donalds.jpg' %}">
+                    <div class="uber_comfort">
+                        <p>Faça pedidos em seus restaurantes favoritos aqui no Uber Eats, contamos com diversos restaurantes cadastrados, os mais populares como McDonalds, Burguer King, KFC estão conosco, e conosco você consegue descontos promocionais em todos os pedidos pelo site ou pelo aplicativo, confira já as promoções, também é possível verificar as avaliações de cada restaurante, assim como taxa de entrega e espera.</p>
+                    </div>
+                    
+                    <div>
+                        <h4>Como conseguir código de desconto?</h4>
+                        <p>Os clientes podem obter descontos ao compartilhar via e-mail e redes sociais seu código promocional do serviço, localizado na seção "Pedidos com descontos" no perfil do app. Quando um amigo fizer um pedido pela primeira vez no Uber Eats e utilizar esse código, o usuário também recebe uma sequência para ganhar um abatimento de valor no próximo pedido feito. O benefício expira após três meses.</p>
+                    </div>
+                    
+                    <div>
+                        <h4>Como funciona a política de cancelamento?</h4>
+                        <p>É possível cancelar um pedido antes do restaurante aceitá-lo. Caso a necessidade de interrupção ocorra após essa etapa, a companhia informa a necessidade de entrar em contato com a equipe de suporte do Uber Eats, para que confirme com o estabelecimento se a comida já começou a ser preparada. "Caso o restaurante já tenha começado a preparar o seu pedido, não será possível fazer o reembolso", explica a empresa.</p>
+                    </div>
+                    
+                    <div class="mesclar">
+                        <h4>Tempo de entrega</h4>
+                        <h5>Pelo Uber Eats a entrega é mais rápida</h5>
+                    </div>
+                    <img src="{% static 'uber/img/uber_eats_preparo.png' %}">
+                    <div class="uber_bag">
+                        <p>O tempo de entrega é calculado a partir de uma estimativa que leva em conta o tempo médio de preparo da comida mais o necessário para o entregador levar o pedido ao destino final. O tempo real de entrega pode variar, dependendo do movimento no restaurante, do tamanho do seu pedido, das condições do trânsito e de outros fatores.</p>
+                    </div>
+                    
+                    <div class="mesclar botoes_uber_eats">
+                        
+                        <a class="botao_uber_eats" href="https://play.google.com/store/apps/details?id=com.ubercab.eats&hl=pt_BR">Google Play: Uber <span>Eats</span> <i class="fas fa-download"></i></a>
+                    
+                        <a class="botao_uber_eats" href="https://apps.apple.com/us/app/uber-eats-food-delivery/id1058959277">App Store: Uber <span>Eats</span> <i class="fas fa-download"></i></a>
+                    </div>
+                </div>
+                <!-- Fim Uber Eats -->
+                
+                <!-- Serviços -->
+                <div class="servicos servicos_inferior">
+
+                    {% include 'uber/parciais/servicos_categorias.html' %}
+
+                    {% include 'uber/parciais/servicos_mobile.html' %}
+                </div>
+                <!-- Fim Serviços -->
+                
+            </main>
+            <!-- Fim Conteúdo Principal -->
+            
+            {% include 'uber/parciais/rodape.html' %}
+        </div>
+    
+    </body>
+</html>

@@ -1,0 +1,46 @@
+{% load static %}
+<!-- Rodapé -->
+<footer class="footer">
+    <ul class="sobre">
+        <li><h3>Sobre</h3></li>
+        <li><a href="{% url 'uber:sobre' %}">Quem somos</a></li>
+        <li><a href="{% url 'uber:sobre' %}">Como a Uber funciona</a></li>
+        <li><a href="{% url 'uber:sobre' %}">Parcerias</a></li>
+    </ul>
+    
+    <ul class="serviços">
+        <li><h3>Serviços</h3></li>
+        <li><a href="{% url 'uber:servicos' %}">Categorias Uber</a></li>
+        <li><a href="{% url 'uber:uber_eats' %}">Uber Eats</a></li>
+        <li><a href="{% url 'uber:mobile' %}">Downloads</a></li>
+    </ul>
+    
+    <ul class="contatos">
+        <li><h3>Contato</h3></li>
+        <li><a href="{% url 'uber:contato' %}">Suporte</a></li>
+        <li><a href="{% url 'uber:contato' %}">Comentários</a></li>
+        <li><a href="{% url 'uber:contato' %}">Avalie-nos</a></li>
+    </ul>
+    
+    <!-- Botoes Redes Sociais -->
+    <nav class="botoes_inferiores">
+        <ul>
+            <li><a href="https://www.facebook.com/uberbr/?brand_redir=120945717945722"><i class="fab fa-facebook"></i></a></li>
+            <li><a href="https://twitter.com/uber?uclick_id=5797cbf2-698f-42ac-8bcf-1f02a7bf745b"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="https://www.youtube.com/channel/UCgnxoUwDmmyzeigmmcf0hZA?uclick_id=5797cbf2-698f-42ac-8bcf-1f02a7bf745b"><i class="fab fa-youtube"></i></a></li>
+            <li><a href="https://www.linkedin.com/company/uber-com/"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="https://www.instagram.com/uber/?uclick_id=5797cbf2-698f-42ac-8bcf-1f02a7bf745b"><i class="fab fa-instagram"></i></a></li>
+        </ul>
+    </nav>
+    
+    <!-- Ícones de Download -->
+    <ul class="icones_download">
+        <li><a href="https://apps.apple.com/us/app/uber/id368677368?uclick_id=1e3e3bed-1d47-4c1d-a82f-41a149feb678"><img src="{% static 'uber/img/app_store_icone.png' %}"></a></li>
+        <li><a href="https://play.google.com/store/apps/details?id=com.ubercab&uclick_id=1e3e3bed-1d47-4c1d-a82f-41a149feb678"><img src="{% static 'uber/img/google_play_icone.png' %}"></a></li>
+    </ul>
+    
+    <div class="footer_absoluto">
+        <a href="{% url 'uber:inicio' %}" class="logo"><h1>Uber</h1></a>
+    </div>
+</footer>
+<!-- Fim Rodapé -->

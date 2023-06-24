@@ -1,0 +1,48 @@
+<!-- Cabeçalho -->
+<header class="header">
+    
+    <!-- Logo -->
+    <a href="{% url 'uber:inicio' %}" class="logo"><h1>Uber</h1></a>
+    
+    <!-- Barra de navegação -->
+    <nav class="nav">
+        <ul>
+            <li><a href="{% url 'uber:sobre' %}">Sobre</a></li>
+            <li><a href="{% url 'uber:servicos' %}">Serviços</a></li>
+            <li><a href="{% url 'uber:contato' %}">Contato</a></li>
+            <i class="far fa-user"></i>
+            <li><a href="{% url 'uber:login' %}">Entrar</a></li>
+            <li><a href="{% url 'uber:register' %}">Cadastrar</a></li>
+        </ul>
+    </nav>
+    
+</header>
+<!-- Fim Cabeçalho -->
+
+<!-- Navegação Lateral -->
+<nav class="sidenav">
+    <ul>
+        
+        <li class="side_logo">
+            <a href="{% url 'uber:inicio' %}"><i class="fab fa-uber"></i><span>Uber</span></a>
+        </li>
+        
+        <!-- Ícones -->
+        <li>
+            <a href="{% url 'uber:servicos' %}"><i class="fas fa-th-large"></i><span>Categorias</span></a>
+        </li>
+        <li>
+            <a href="{% url 'uber:uber_eats' %}"><i class="fas fa-utensils"></i><span>Uber Eats</span></a>
+        </li>
+        <li>
+            <a href="{% url 'uber:contato' %}"><i class="far fa-comments"></i><span>Comentários</span></a>
+        </li>
+        <li>
+            <a href="{% url 'uber:contato' %}"><i class="far fa-question-circle"></i><span>Suporte</span></a>
+        </li>
+        <li>
+            <a href="{% url 'uber:contato' %}"><i class="fas fa-star-half-alt"></i><span>Avalie-nos</span></a>
+        </li>
+    </ul>
+</nav>
+<!-- Fim Navegação Lateral -->
