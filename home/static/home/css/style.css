@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(56, 56, 56);
+}
+
+h3{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    color: rgb(128, 2, 2);
+}
+
+a{
+    text-decoration: none;
+    color: grey;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+a:hover{
+    color: rgb(128, 2, 2);
+}

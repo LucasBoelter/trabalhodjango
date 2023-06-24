@@ -1,0 +1,41 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+	<head>
+
+		<title>Mata Mosca</title>
+		<meta charset="utf-8">
+
+		<!-- JS -->
+		<script src="{% static 'mata_mosca/js/jogo.js' %}"></script>
+
+		<!-- Estilo CSS -->
+		<link rel="stylesheet" type="text/css" href="{% static 'mata_mosca/css/estilo.css' %}">
+
+	</head>
+
+	<body onresize="ajustarTamanhoTela()">
+
+		<div class="painel">
+			<div class="vidas">
+				<img id="vida1" src="{% static 'mata_mosca/img/coracao_cheio.png' %}">
+				<img id="vida2" src="{% static 'mata_mosca/img/coracao_cheio.png' %}">
+				<img id="vida3" src="{% static 'mata_mosca/img/coracao_cheio.png' %}">
+			</div>
+
+			<div class="cronometro">
+				Tempo restante: <span id="id_cronometro"></span>
+			</div>
+		</div>
+
+		<script type="text/javascript">
+			document.getElementById('id_cronometro').innerHTML = tempo
+			var intervalo = setInterval(function() {
+				posicaoAleatoria()
+			}, spawnMosca)
+		</script>
+
+	</body>
+
+</html>

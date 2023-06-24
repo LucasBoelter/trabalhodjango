@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+{% include 'home/parciais/head.html' %}
+<body>
+    <h3>Atividade Para entregar do Lucas</h3>
+    <ul>
+        <li><a href="{% url 'calculadora:inicio' %}">Calculadora</a></li>
+        <li><a href="{% url 'mata_mosca:inicio' %}">Game Mata Mosca</a></li>
+        <li><a href="{% url 'orcamento:inicio' %}">Calculador de Orçamento</a></li>
+        <li><a href="{% url 'uber:inicio' %}">Uber</a></li>
+        {% comment %} <li><a href="{% url 'home:teste' %}">teste</a></li> {% endcomment %}
+    </ul>
+</body>
+</html>
